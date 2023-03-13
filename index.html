@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>"mars rover"</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        font-family: 'VT323', monospace;
+        cursor: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .circle {
+        width: 500px;
+        height: 500px;
+        background: Repeating-radial-gradient(circle at 50% 50%, rgb(59, 208, 245), rgb(242, 97, 250));
+        filter: blur(70px);
+        border-radius: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        transition: all 0.7s ease-out;
+    }
+    
+    .main-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-heading h1 {
+        margin-top: 170px;
+        font-size: 80px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .parents {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        font-size: larger;
+    }
+    
+    .parents h2 {
+        margin: 0 20px;
+        color: rgb(0, 0, 0);
+        opacity: 0;
+    }
+    
+    .parents h2:hover {
+        color: rgb(0, 0, 0);
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="circle"></div>
+
+    <div class="main-heading">
+        <H1>SEARCH FOR LIFE</H1>
+    </div>
+
+    <div class="parents">
+        <a href="WhatsMarsRover.html">
+            <h2>What's Mars Rover</h2>
+        </a>
+        <a href="WHYMARS.html">
+            <h2>Why Mars</h2>
+        </a>
+        <a href="MISSIONOVERVIEW.html">
+            <h2>Mission Overview</h2>
+        </a>
+    </div>
+
+
+
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var circle = document.querySelector(".circle");
+            circle.style.left = x + "px";
+            circle.style.top = y + "px";
+        });
+    </script>
+
+
+</body>
+
+</html>

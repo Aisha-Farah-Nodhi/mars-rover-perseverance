@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <title>why mars</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: 'IBM Plex Mono', monospace;
+        }
+        
+        .aboutmars p {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .whyMars {
+            text-align: center;
+            margin-top: 145px;
+            font-size: 66px;
+        }
+        
+        .Rover101 {
+            text-align: center;
+            margin-top: 95px;
+            font-size: 35px
+        }
+        
+        .para2 {
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        .Future h2 {
+            text-align: center;
+            margin-top: 95px;
+            font-size: 35px
+        }
+        
+        .Future p {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 95px;
+        }
+        
+        .carousel-container {
+            max-width: 100%;
+            height: auto;
+            margin: 0 20px 20px 20px;
+            margin-bottom: 100px;
+        }
+        
+        .carousel-item img {
+            max-height: 500px;
+            object-fit: cover;
+        }
+        /* 3d elements css */
+        
+        #card {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform-style: preserve-3d;
+            transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+            width: 500px;
+            height: 500px;
+            background-color: rgba(45, 45, 51, 0);
+            transition: transform 0.1s ease;
+            margin-top: 380px;
+            margin-bottom: -350px;
+        }
+        
+        #card:hover {
+            transform: translate(-50%, -50%) rotatex(20deg) rotatey(-20deg);
+        }
+        
+        #card .front,
+        #card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: visible;
+        }
+        
+        #card .front {
+            background-color: rgba(255, 0, 255, 0);
+        }
+        
+        #card .back {
+            background-color: rgba(0, 0, 255, 0);
+            transform: rotateY(180deg);
+        }
+        
+        .front {
+            transform: translateZ(100px);
+        }
+        
+        .back {
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        
+        .right {
+            transform: translateX(100px) rotateY(90deg);
+        }
+        
+        .left {
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+        
+        .top {
+            transform: translateY(-100px) rotateX(90deg);
+        }
+        
+        .bottom {
+            transform: translateY(100px) rotateX(-90deg);
+        }
+        
+        .front h1 {
+            text-align: center;
+            font-size: 30px;
+            color: #f6a205;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotateY(0);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="whyMars">Why Mars</h1>
+        <div class="aboutmars">
+            <p>since1960s humans have set out to discover what Mars can teach us about how planets grow and evolve and </p>
+
+        </div>
+
+
+        <!-- Moveable object -->
+        <div id="card">
+            <div class="front">
+                <img src="images\marsPngInside.png" class="img-fluid" alt="...">
+            </div>
+            <div class="back" id="roverImage">
+                <img src="images\marsPngBorder.png" class="img-fluid" alt="...">
+            </div>
+        </div>
+
+
+        <div class="totalRovers">
+            <h2 class="Rover101"> Other Rovers Sent In Mars</h2>
+            <p class="para2">vugdfwfchh</p>
+        </div>
+        <!-- Slide -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="carousel-container">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Future">
+            <h2>Future Projects</h2>
+            <p>njghdgc</p>
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+            const card = document.getElementById("card");
+
+            document.addEventListener("mousemove", function(event) {
+                let mouseX = event.clientX;
+                let mouseY = event.clientY;
+
+                let cardX = card.offsetLeft + card.offsetWidth / 2;
+                let cardY = card.offsetTop + card.offsetHeight / 2;
+
+                let diffX = mouseX - cardX;
+                let diffY = mouseY - cardY;
+
+                card.style.transform =
+                    "translate(-50%, -50%) rotateX(" +
+                    -diffY / 70 +
+                    "deg) rotateY(" +
+                    diffX / 70 +
+                    "deg)";
+            });
+        </script>
+
+
+
+</body>
+
+</html>

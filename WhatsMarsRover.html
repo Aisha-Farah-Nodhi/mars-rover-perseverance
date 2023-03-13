@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <title>What's mars rover</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: 'IBM Plex Mono', monospace;
+        }
+        
+        .para1 p,
+        .para2 p {
+            font-size: 18px;
+        }
+        
+        .topHeading {
+            text-align: center;
+            margin-top: 145px;
+            font-size: 60px;
+        }
+        
+        .para1 {
+            text-align: center;
+            margin-right: 70px;
+            margin-left: 70px;
+            margin-bottom: 130px;
+        }
+        
+        .para2 {
+            text-align: center;
+            margin-bottom: 175px;
+        }
+        
+        .para2 h1 {
+            margin-bottom: 23px;
+        }
+        
+        .para2 p {
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        
+        .ROCKET h2 {
+            text-align: center;
+            margin-top: 150px;
+            font-size: 50px;
+            margin-bottom: 97px;
+        }
+        
+        .vechicleimg {
+            display: flex;
+            justify-content: center;
+            width: 70 px;
+        }
+        
+        .ROCKET p {
+            text-align: center;
+            margin-top: 35px;
+            margin-right: 90px;
+            margin-left: 100px;
+            margin-bottom: 130px;
+            display: flex;
+        }
+        
+        .card-body {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .structure {
+            margin-top: 100px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .carousel-container {
+            max-width: 100%;
+            height: auto;
+            margin: 0 20px 20px 20px;
+            margin-bottom: 100px;
+        }
+        
+        .carousel-item img {
+            max-height: 500px;
+            object-fit: cover;
+        }
+        
+        .surfaceList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        #listTitleOfBigtext {
+            font-size: 40px;
+            text-align: right;
+        }
+        
+        .custom-bg .list-group-item {
+            background-color: #000000;
+            color: white
+        }
+        
+        #lastList {
+            margin-left: 50px;
+        }
+        /* 3d elements css */
+        
+        #card {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform-style: preserve-3d;
+            transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+            width: 500px;
+            height: 500px;
+            background-color: rgba(45, 45, 51, 0);
+            transition: transform 0.1s ease;
+            margin-top: 380px;
+            margin-bottom: -350px;
+        }
+        
+        #card:hover {
+            transform: translate(-50%, -50%) rotatex(20deg) rotatey(-20deg);
+        }
+        
+        #card .front,
+        #card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: visible;
+        }
+        
+        #card .front {
+            background-color: rgba(255, 0, 255, 0);
+        }
+        
+        #card .back {
+            background-color: rgba(0, 0, 255, 0);
+            transform: rotateY(180deg);
+        }
+        
+        .front {
+            transform: translateZ(100px);
+        }
+        
+        .back {
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        
+        .right {
+            transform: translateX(100px) rotateY(90deg);
+        }
+        
+        .left {
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+        
+        .top {
+            transform: translateY(-100px) rotateX(90deg);
+        }
+        
+        .bottom {
+            transform: translateY(100px) rotateX(-90deg);
+        }
+        
+        .front h1 {
+            text-align: center;
+            font-size: 30px;
+            color: #f6a205;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotateY(0);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="topHeading">What's Mars Rover</h1>
+
+    <div class="para1">
+        <p>
+            Mars Rover is a motor vehicle designed for traveling on the surface of Mars.Over the years,a multitude of space vehicles have been sent to the Red Planet for exploration and each of these aircraft possess their own specialties.Rovers have wheels which
+            enables them to land as well as locomote on Mar's surface.It has immensely helped scientists in their quest to understand what different parts of the Planet are made of.
+        </p>
+    </div>
+
+    <!-- Moveable object -->
+    <div id="card">
+        <div class="front">
+            <H1 style="font-family: 'Bungee', cursive; margin-top: 130px;">Perseverance</H1>
+        </div>
+        <div class="back" id="roverImage">
+            <img src="rover3d.png" class="img-fluid" alt="...">
+        </div>
+    </div>
+
+
+    <div class="para2">
+        <h1>WHAT'S PERCY? </h1>
+        <p>
+            Percy is the nickname for the mars rover Perseverance which was launched on 2020 as a part of NASA's Mars 2020 mission.
+        </p>
+    </div>
+
+
+    <!-- Launching facts from bootstrap -->
+
+    <div class="card mb-3 mx-auto card-body" style="max-width: 800px;">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <img src="https://source.unsplash.com/C6oPXOatFD8" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-4">
+                <div class="card-body" style="color: black;">
+                    <h5 class="card-title">Launching Facts:</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>MIssion Name:Mars 2020</li>
+                            <li>Rover Name:Perseverance</li>
+                            <li>Launch:July 30,2020</li>
+                            <li>Landing:February</li>
+                            <li>Mission Duration:At least 1 Mars year(about 687 Earth days) </li>
+                            <li>launch Vehicle:Atlas V-541</li>
+
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="structure">↡ Structure ↡</h1>
+
+    <!-- Slide -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="carousel-container">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- List of surface operation -->
+    <div class="container" id="lastList">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 id="listTitleOfBigtext">What will the Perseverance rover do?</h1>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group list-group-flush custom-bg">
+                    <li class="list-group-item">Collect samples of Martian rock and soil</li>
+                    <li class="list-group-item">Store samples in sealed tube which is ferried back to Earth for detailed analysis</li>
+                    <li class="list-group-item">Conduct the search for ancient life in Mars</li>
+                    <li class="list-group-item">Seek for biosignatures</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="ROCKET">
+        <h2> Launching Vehicle:</h2>
+        <div class="vechicleimg">
+            <img src="https://source.unsplash.com/C6oPXOatFD8">
+        </div>
+        <p> A launching vehicle provides the velocity needed by a spacecraft to escape Earth's gravity and set it on it's course for Mars. The Atlas V-541 was used for the launching of the rover Perseverance. This extraordinary spacecraft stands 191 feet(58
+            meters)tall which is as tall as a 19 story building.It weighs about 1.17 million pounds.
+        </p>
+    </div>
+    <script>
+        const card = document.getElementById("card");
+
+        document.addEventListener("mousemove", function(event) {
+            let mouseX = event.clientX;
+            let mouseY = event.clientY;
+
+            let cardX = card.offsetLeft + card.offsetWidth / 2;
+            let cardY = card.offsetTop + card.offsetHeight / 2;
+
+            let diffX = mouseX - cardX;
+            let diffY = mouseY - cardY;
+
+            card.style.transform =
+                "translate(-50%, -50%) rotateX(" +
+                -diffY / 70 +
+                "deg) rotateY(" +
+                diffX / 70 +
+                "deg)";
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <title>Mission Overview</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: 'IBM Plex Mono', monospace;
+        }
+        
+        .mainhead {
+            text-align: center;
+            margin-top: 145px;
+            font-size: 60px;
+        }
+        
+        .team h2 {
+            text-align: center;
+            margin-top: 130px;
+            font-size: 35px;
+        }
+        
+        .team p {
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        .discovery h2 {
+            text-align: center;
+            margin-top: 130px;
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+        
+        .carousel-container {
+            max-width: 100%;
+            height: auto;
+            margin: 0 20px 20px 20px;
+            margin-bottom: 100px;
+        }
+        
+        .carousel-item img {
+            max-height: 500px;
+            object-fit: cover;
+        }
+        
+        .parent-container {
+            display: flex;
+            justify-content: center;
+            margin-left: 20px;
+            margin-bottom: 120px;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        
+        .frame1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50% / 45% 45% 50% 60%;
+            overflow: hidden;
+            position: relative;
+            margin-right: 15px;
+            animation: move 1.6s infinite alternate;
+        }
+        
+        .frame2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50% / 50% 60% 50% 60%;
+            overflow: hidden;
+            position: relative;
+            margin-right: 15px;
+            animation: move 1.6s infinite alternate;
+        }
+        
+        .frame3 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50% / 50% 50% 60% 50%;
+            overflow: hidden;
+            position: relative;
+            margin-right: 15px;
+            animation: move 1.6s infinite alternate;
+        }
+        
+        .container img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+        
+        .text-container {
+            flex: 1;
+            animation: move 1.7s infinite alternate;
+        }
+        
+        @keyframes move {
+            from {
+                transform: translateY(-10px);
+            }
+            to {
+                transform: translateY(10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="mainhead">Mission Overview</h1>
+
+    <div class="team">
+        <h2>Meet The Team</h2>
+        <p>fegrf</p>
+    </div>
+
+
+    <!-- Slide -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="carousel-container">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="missionPic">
+        <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="discovery">
+        <h2> Shocking Findings</h2>
+    </div>
+
+
+
+
+
+
+
+    <!-- The three shape-->
+
+
+    <div class="parent-container">
+        <div class="container">
+            <div class="frame1">
+                <img src="https://source.unsplash.com/I0fDR8xtApA" alt="Your Image">
+            </div>
+            <div class="text-container">
+                <p>There will be<br> a simple text</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="frame2">
+                <img src="https://source.unsplash.com/I0fDR8xtApA" alt="Your Image">
+            </div>
+            <div class="text-container">
+                <p>There will be<br> a simple text</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="frame3">
+                <img src="https://source.unsplash.com/I0fDR8xtApA" alt="Your Image">
+            </div>
+            <div class="text-container">
+                <p>There will be<br> a simple text</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
