@@ -16,11 +16,23 @@
             background-color: black;
             color: rgb(255, 255, 255);
             font-family: 'IBM Plex Mono', monospace;
+            animation: page-transition 2s ease-in-out;
+        }
+        
+        @keyframes page-transition {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
         
         .aboutmars p {
             text-align: center;
             margin-top: 30px;
+            margin-left: 170px;
+            margin-right: 170px;
         }
         
         .whyMars {
@@ -35,9 +47,16 @@
             font-size: 35px
         }
         
+        .totalRovers {
+            margin-top: 200px;
+        }
+        
         .para2 {
             text-align: center;
             margin-top: 25px;
+            margin-bottom: 100px;
+            margin-left: 130px;
+            margin-right: 130px;
         }
         
         .Future h2 {
@@ -50,6 +69,8 @@
             text-align: center;
             margin-top: 25px;
             margin-bottom: 95px;
+            margin-left: 200px;
+            margin-right: 200px;
         }
         
         .carousel-container {
@@ -75,7 +96,7 @@
             height: 500px;
             background-color: rgba(45, 45, 51, 0);
             transition: transform 0.1s ease;
-            margin-top: 380px;
+            margin-top: 300px;
             margin-bottom: -350px;
         }
         
@@ -145,7 +166,8 @@
     <div>
         <h1 class="whyMars">Why Mars</h1>
         <div class="aboutmars">
-            <p>since1960s humans have set out to discover what Mars can teach us about how planets grow and evolve and </p>
+            <p>since1960s humans have set out to discover what Mars can teach us about how planets grow and evolve. Mars is explored by NASA and other space agencies because it is the most similar planet to Earth in our solar system, and studying its geology,
+                climate, and history can help us better understand our own planet and the possibility of life beyond Earth. Additionally, Mars may be a potential destination for human exploration in the future.</p>
 
         </div>
 
@@ -163,8 +185,9 @@
 
         <div class="totalRovers">
             <h2 class="Rover101"> Other Rovers Sent In Mars</h2>
-            <p class="para2">vugdfwfchh</p>
+            <p class="para2">Discover the history of Mars exploration with previous rover missions. From Sojourner to Curiosity, learn about the groundbreaking discoveries and technological advancements that paved the way for NASA's current Mars rover missions.</p>
         </div>
+
         <!-- Slide -->
         <div class="container">
             <div class="row">
@@ -173,16 +196,16 @@
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                    <img src="images/or2.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                    <img src="images/or1.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                    <img src="images/or3.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://source.unsplash.com/I0fDR8xtApA" class="d-block w-100" alt="...">
+                                    <img src="images/or4.png" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -202,7 +225,8 @@
 
         <div class="Future">
             <h2>Future Projects</h2>
-            <p>njghdgc</p>
+            <p>In the late 2020s, several spacecraft, including a lander, rocket and multiple helicopters, would be part of this interplanetary relay effort to deliver the first samples ever returned from another planet. These samples are expected to be
+                brought to Earth in the early to mid-2030s. Artemis is the first step in the next era of human exploration. NASA will establish a sustainable presence on the Moon to prepare for human mission to Mars</p>
         </div>
 
 
@@ -227,9 +251,9 @@
 
                 card.style.transform =
                     "translate(-50%, -50%) rotateX(" +
-                    -diffY / 70 +
+                    -diffY / 60 +
                     "deg) rotateY(" +
-                    diffX / 70 +
+                    diffX / 60 +
                     "deg)";
             });
         </script>
